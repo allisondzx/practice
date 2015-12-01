@@ -38,7 +38,7 @@ new_file = open(os.path.join(os.path.abspath('.'), 'output.txt'), 'w')
 for x in fre_list:
   for item in my_dict.keys():
     if my_dict[item] == x:
-      new_file.write(str(my_dict[item])+"\n")
+      new_file.write(str(item)+"\n")
 
 new_file.close()
 my_file.close()
