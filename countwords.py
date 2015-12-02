@@ -11,14 +11,16 @@ for item in my_file.read().split(" "):
 
 list_len = len(my_list)
 
+print my_list
+
 # 定义计频函数
 def frequency(word):
   fre = 0
   n = 0
   while n < list_len:
-      if word == my_list[n]:
-          fre += 1
-      n += 1
+    if word == my_list[n]:
+      fre += 1
+    n += 1
   return fre
 
 # 建立单词-频数字典
@@ -27,9 +29,13 @@ my_dict={}
 for item in my_list:
   my_dict[item] = frequency(item)
 
+print my_dict
+
 # 频数排序
 fre_list = my_dict.values()
 fre_list.sort()
+
+print fre_list
 
 # 按频数读key，写新txt
 # 这里最好用 path 来自动序列化绝对路径 @guo-yu
