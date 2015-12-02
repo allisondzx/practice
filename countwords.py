@@ -34,7 +34,7 @@ print my_dict
 # 频数排序
 fre_list = my_dict.values()
 fre_list.sort()
-
+fre_list = list(set(fre_list))
 print fre_list
 
 # 按频数读key，写新txt
